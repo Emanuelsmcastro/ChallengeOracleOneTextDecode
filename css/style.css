@@ -25,7 +25,7 @@ a {
 }
 
 body {
-  background: url("./assets/wallpaper.jpg") no-repeat center;
+  background: url("../assets/wallpaper.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
 }
