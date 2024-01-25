@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Text Decode</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-    <body>
-        <header class="header-container">
-            <h1 class="title"><strong>Challenge Oracle One:</strong> Text Decoder</h1>
-        </header>
-        <main class="main-container">
-            <section class="main-content">
-                <div class="text-input">
-                    <h2 class="section-title">Enter your text below</h2>
-                    <textarea name="text" id="text-area" cols="60" rows="10"></textarea>
-                </div>
-                <div class="button-container">
-                    <button class="button"> Encode
-                        <span></span>
-                    </button>
-                    <button class="button"> Decode
-                        <span></span>
-                    </button>
-                </div>
-            </section>
-            <aside class="side-bar">
-                <h2 class="section-title">Your texts</h2>
-                <div class="text-container">
-                    <p class="text">It's a example</p>
-                </div>
-            </aside>
-        </main>
-        <footer class="footer-container">
-            <p class="footer-text">Created by <a href="#">Emanuel Castro</a></p>
-        </footer>
-        <script src="" async defer></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Text Decode</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <h1 class="title"><strong>Challenge Oracle One:</strong> Text Decoder</h1>
+    </header>
+    <main class="main-container">
+        <section class="main-content">
+            <div class="text-input">
+                <h2 class="section-text">Enter your text below</h2>
+                <textarea name="text" id="text-area" cols="60" rows="10"></textarea>
+            </div>
+            <div class="button-container">
+                <button class="button encode"> Encode
+                    <span></span>
+                </button>
+                <button class="button decode"> Decode
+                    <span></span>
+                </button>
+            </div>
+        </section>
+        <aside class="side-bar">
+            <h2 class="section-text">Your texts</h2>
+            <p class="section-text help-text" style="display: none;">Click on the texts to copy them</p>
+            <div class="text-container">
+            </div>
+        </aside>
+    </main>
+    <footer class="footer-container">
+        <p class="footer-text">Created by <a target="_blank"
+                href="https://www.linkedin.com/in/emanuel-castro-dev/">Emanuel Castro</a>
+        </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="./js/main.js" async defer></script>
+</body>
+
 </html>
