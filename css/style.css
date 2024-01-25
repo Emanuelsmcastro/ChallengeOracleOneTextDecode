@@ -128,8 +128,6 @@ button:active span::before {
 .main-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-content: center;
   height: calc(100vh - (60px + 10px + 22px));
 }
 
@@ -142,6 +140,8 @@ button:active span::before {
   border-radius: 4px;
   position: relative;
   min-width: 80%;
+  align-self: center;
+  justify-self: center;
 }
 
 .button-container {
@@ -151,7 +151,7 @@ button:active span::before {
   padding: 10px;
 }
 
-.section-title {
+.section-text {
   padding: 10px;
   cursor: default;
   color: white;
@@ -162,7 +162,16 @@ button:active span::before {
   padding: 20px;
   border-radius: 4px;
   overflow-y: auto;
-  min-width: 80%;
+  width: 80%;
+  align-self: center;
+  justify-self: center;
+  max-height: 80%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .text {
@@ -170,6 +179,14 @@ button:active span::before {
   background-color: var(--background-2);
   padding: 10px;
   border-radius: 10px;
+  cursor: pointer;
+  max-height: 100px;
+  overflow-y: hidden;
+}
+
+.encoded {
+  color: var(--color-4);
+  border: 1px solid var(--color-4);
 }
 
 .footer-container {
@@ -178,6 +195,39 @@ button:active span::before {
 
 .footer-text {
   color: white;
+}
+
+/* ===== Scrollbar CSS ===== */
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--color-3) none;
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #8f54a0;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 1000px) {
