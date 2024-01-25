@@ -233,7 +233,12 @@ button:active span::before {
 @media (max-width: 1000px) {
   .main-container {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 0px;
+  }
+
+  .side-bar {
+    align-self: flex-start;
+    justify-self: center;
   }
 }
 
@@ -254,10 +259,6 @@ button:active span::before {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-  }
-
-  .side-bar {
-    min-height: 300px;
   }
 
   h1 {
