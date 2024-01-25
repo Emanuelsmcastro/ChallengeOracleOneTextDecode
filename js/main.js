@@ -30,6 +30,7 @@ function encodeAndDecode(encode){
     }
     p.addEventListener("click", event => {
         input.value = event.currentTarget.innerText;
+        input.scrollIntoView();
     });
     addBounceAnimation(p, ".8s");
     if(helpText.style.display === "none"){
